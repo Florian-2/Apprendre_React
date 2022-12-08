@@ -1,0 +1,21 @@
+.myClass {
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.flex {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
