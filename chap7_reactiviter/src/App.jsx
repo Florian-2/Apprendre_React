@@ -1,5 +1,6 @@
 import Button from "./Button";
 import UseState from "./UseState";
+import Exercice from "./Exercice";
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
             <hr />
 
             <UseState />
+
+            <hr />
+
+            <Exercice />
         </>
     );
 }
