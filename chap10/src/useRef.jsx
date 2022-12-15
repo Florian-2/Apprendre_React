@@ -69,9 +69,9 @@ function RefDOM() {
     Pour appliquer une ref sur un composant il faut utiliser "forwardRef(props, maRef)" (qui retourne un composant)
 
 */
-const Input = () => forwardRef((props, ref) => {
-    return <input type="text" ref={ref} />;
-})
+const Input = forwardRef((props, ref) => {
+    return <input {...props} ref={ref} />;
+});
 
 function RefDOM2() {
     const inputRef = useRef(null);
