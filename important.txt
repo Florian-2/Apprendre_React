@@ -1,0 +1,1 @@
+1. Un composant doit être pure donc pas de truc asynchrone (sauf si c'est gérer par une fonction event handler, fonction qui réagie à un event ou par un useEffect), le composant doit retourner le même résultat si on lui donne les même entrée.
