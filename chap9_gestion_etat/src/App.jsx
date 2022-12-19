@@ -65,31 +65,31 @@ function App() {
     }
 
     return (
-        <ThemeContext.Provider value={state.theme}>
-            <div className={ `App theme-${state.theme}` }>
-                <select onChange={handleChangeTheme} value={state.theme}>
-                    <option value="dark">Sombre</option>
-                    <option value="ligth">Clair</option>
-                </select>
+        // <ThemeContext.Provider value={state.theme}>
+        //     <div className={ `App theme-${state.theme}` }>
+        //         <select onChange={handleChangeTheme} value={state.theme}>
+        //             <option value="dark">Sombre</option>
+        //             <option value="ligth">Clair</option>
+        //         </select>
 
-                <h1>Todo-List</h1>
+        //         <h1>Todo-List</h1>
 
-                <AddTodo addTodo={addTodo}/>
-                <TodoList 
-                    todoList={state.todoList} 
-                    deleteTodo={deleteTodo} 
-                    toggleTodoDone={toggleTodoDone}
-                    toggleEditTodo={toggleEditTodo}
-                    saveEditTodo={editTodo}
-                    selectTodo={selectTodo}
-                />
+        //         <AddTodo addTodo={addTodo}/>
+        //         <TodoList 
+        //             todoList={state.todoList} 
+        //             deleteTodo={deleteTodo} 
+        //             toggleTodoDone={toggleTodoDone}
+        //             toggleEditTodo={toggleEditTodo}
+        //             saveEditTodo={editTodo}
+        //             selectTodo={selectTodo}
+        //         />
 
-                {/* <hr />
-                <Render/> */}
-            </div>
-        </ThemeContext.Provider>
+        //         {/* <hr />
+        //         <Render/> */}
+        //     </div>
+        // </ThemeContext.Provider>
 
-        // <Counter/>
+        <Counter/>
     )
 }
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useReducer } from "react";
 
 
@@ -26,7 +27,7 @@ function Counter() {
     return (
         <>
             <p>Counter: { state.count }</p>
-            <button onClick={() => dispatch({ type: "INC", step: 2 })}>increment</button>
+            <button onClick={() => dispatch({ type: "INC", step: input })}>increment</button>
             <button onClick={() => dispatch({ type: "DEC" })}>decrement</button>
             <button onClick={() => dispatch({ type: "RESET" })}>reset</button>
         </>
