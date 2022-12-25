@@ -9,15 +9,6 @@ import './Header.module.css';
 function Header() {
     const { isDarkMode, toggle } = useDarkMode();
 
-    useEffect(() => {
-        const html = document.querySelector("html");
-
-        if (html) {
-            html.classList.value = "";
-            html.classList.add(isDarkMode ? 'dark' : 'light');
-        }
-    }, [isDarkMode]);
-
     return (
         <header>
             <h1>Dark</h1>
